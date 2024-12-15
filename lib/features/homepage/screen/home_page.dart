@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           spacing: 6,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('Home Page'),
             ElevatedButton(
@@ -54,6 +54,12 @@ class HomePage extends StatelessWidget {
               child: Text('Go to Input Widgets'),
             ),
 
+            ElevatedButton(
+              onPressed: () {
+                context.go('/single-child-layout');
+              },
+              child: Text('Go to Single Child Layout'),
+            ),
           ],
         ),
       ),
