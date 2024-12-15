@@ -60,6 +60,20 @@ class HomePage extends StatelessWidget {
               },
               child: Text('Go to Single Child Layout'),
             ),
+
+            ElevatedButton(
+              onPressed: () {
+                context.go('/card-box');
+              },
+              child: Text('Go to Card Box Layout'),
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                context.go('/multiple-child-layout');
+              },
+              child: Text('Go to Multiple Child Layout'),
+            ),
           ],
         ),
       ),
