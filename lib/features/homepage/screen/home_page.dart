@@ -17,6 +17,29 @@ class HomePage extends StatelessWidget {
               },
               child: Text('Go to Login'),
             ),
+            Text('Home Page'),
+            ElevatedButton(
+              onPressed: () {
+                context.go('/login');
+              },
+              child: Text('Go to Login'),
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                context.go('/typography');
+              },
+              child: Text('Go to Typography'),
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                context.go('/color');
+              },
+              child: Text('Go to Color Page'),
+            ),
+
+
           ],
         ),
       ),
