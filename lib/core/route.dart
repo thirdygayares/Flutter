@@ -1,3 +1,5 @@
+import 'package:flutter_foundamentals/features/flutter_components/basic_elements/screen/basic_element_page.dart';
+import 'package:flutter_foundamentals/features/flutter_components/input_widgets/screen/input_widget_screen.dart';
 import 'package:flutter_foundamentals/features/themes/screen/color_page.dart';
 import 'package:flutter_foundamentals/features/themes/screen/typography_page.dart';
 import 'package:go_router/go_router.dart';
@@ -30,6 +32,14 @@ final GoRouter appRouter  = GoRouter(
     GoRoute(
       path: '/color',
       builder: (context, state) => ColorPage(),
+    ),
+    GoRoute(
+      path: '/basic-elements',
+      builder: (context, state) => BasicElementPage(),
+    ),
+    GoRoute(
+      path: '/input-widgets',
+      builder: (context, state) => InputWidgetScreen(),
     )
   ],
 );

@@ -6,9 +6,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Home Page')),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          spacing: 6,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text('Home Page'),
             ElevatedButton(
@@ -39,6 +40,19 @@ class HomePage extends StatelessWidget {
               child: Text('Go to Color Page'),
             ),
 
+            ElevatedButton(
+              onPressed: () {
+                context.go('/basic-elements');
+              },
+              child: Text('Go to Basic Element Page'),
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                context.go('/input-widgets');
+              },
+              child: Text('Go to Input Widgets'),
+            ),
 
           ],
         ),
