@@ -1,6 +1,7 @@
 import 'package:flutter_foundamentals/features/flutter_components/basic_elements/screen/basic_element_page.dart';
 import 'package:flutter_foundamentals/features/flutter_components/input_widgets/screen/input_widget_screen.dart';
 import 'package:flutter_foundamentals/features/flutter_components/layout/card_box/screen/card_box_page.dart';
+import 'package:flutter_foundamentals/features/flutter_components/layout/grid_layout/screen/grid_layout_page.dart';
 import 'package:flutter_foundamentals/features/flutter_components/layout/multiple_child_layout/screen/multiple_child_layout_page.dart';
 import 'package:flutter_foundamentals/features/flutter_components/layout/single_child_layout/screen/single_child_layout_page.dart';
 import 'package:flutter_foundamentals/features/themes/screen/color_page.dart';
@@ -58,5 +59,11 @@ final GoRouter appRouter  = GoRouter(
       path: '/multiple-child-layout',
       builder: (context, state) => MultipleChildLayoutPage(),
     ),
+
+    GoRoute(
+      path: '/grid-layout-page',
+      builder: (context, state) => GridLayoutPage(),
+    ),
+
   ],
 );

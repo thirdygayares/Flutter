@@ -13,8 +13,20 @@ class WrapComponent extends StatelessWidget {
           spacing: 8,
           runSpacing: 8,
           children: List.generate(
-            10,
-                (index) => Chip(label: Text("Item $index")),
+            40, // Total items
+                (index) => Card(
+              elevation: 8,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Text(
+                  "Item $index", // Pass index dynamically
+                  style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
           ),
         ),
       ],

@@ -74,6 +74,13 @@ class HomePage extends StatelessWidget {
               },
               child: Text('Go to Multiple Child Layout'),
             ),
+
+            ElevatedButton(
+              onPressed: () {
+                context.go('/grid-layout-page');
+              },
+              child: Text('Go to Grid Layout Page'),
+            ),
           ],
         ),
       ),
